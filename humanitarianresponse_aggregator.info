@@ -1,0 +1,9 @@
+name = Humanitarianresponse Aggregator
+description = Aggregate data from RSS feeds
+core = 7.x
+package = Humanitarianresponse
+dependencies[] = aggregator
+dependencies[] = features
+dependencies[] = humanitarianresponse_core
+features[features_api][] = api:1
+features[user_permission][] = administer news feeds
