@@ -14,9 +14,8 @@ function humanitarianresponse_aggregator_user_default_permissions() {
   $permissions['access news feeds'] = array(
     'name' => 'access news feeds',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'aggregator',
   );
@@ -25,8 +24,8 @@ function humanitarianresponse_aggregator_user_default_permissions() {
   $permissions['administer news feeds'] = array(
     'name' => 'administer news feeds',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'aggregator',
   );
